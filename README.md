@@ -119,5 +119,13 @@ Recuerda que Git está optimizado para trabajar en equipo, por lo tanto, debemos
 > git config --global user.name "tu nombre"
 ```
 
-Existen muchas otras configuraciones de Git que puedes encontrar ejecutando el comando **_git config --list_** (o solo git config para ver una explicación más detallada).
+Existen muchas otras configuraciones de Git que puedes encontrar ejecutando el comando 
+
+```
+# Muestra la configuración de git
+> git config --list 
+
+# Muestra la configuración de git y ademas en donde estan guardadas.
+> git config --list --show-origin
+```
 
