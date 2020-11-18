@@ -129,3 +129,15 @@ Existen muchas otras configuraciones de Git que puedes encontrar ejecutando el c
 > git config --list --show-origin
 ```
 
+## 2.4. Analizar cambios en los archivos de tu proyecto con GIT
+```
+# El comando show nos muestra los cambios que han existido sobre un archivo.
+> git show
+
+# Si queremos ver la diferencia entre una version y otra
+> git diff commitA commitB
+
+# Obetener los ID de tus commits
+> git log
+
+```
