@@ -162,10 +162,12 @@ Recuerda que git rm no puede usarse así nomás. Debemos usar uno de los flags p
 
 ```
 # Elimina los archivos del área de Staging y del próximo commit pero los mantiene en nuestro disco duro.
-git rm --cached
+
+> git rm --cached
 
 # Elimina los archivos de Git y del disco duro. Git siempre guarda todo, por lo que podemos acceder al registro de la existencia de los archivos, de modo que podremos recuperarlos si es necesario (pero debemos usar comandos más avanzados).
-git rm --force
+
+> git rm --force
 ```
 
 ### Git reset
@@ -177,10 +179,10 @@ Hay dos formas de usar git reset: con el argumento --hard, borrando toda la info
 
 ```
 # Borramos todo el historial y los registros de Git pero guardamos los cambios que tengamos en Staging, así podemos aplicar las últimas actualizaciones a un nuevo commit.
-> git reset --soft
+> git reset [hash] --soft
 
 # Borra todo. Todo todito, absolutamente todo. Toda la información de los commits y del área de staging se borra del historial.
-> git reset --hard
+> git reset [hash] --hard
 ```
 
 **¡Pero todavía falta algo!**
