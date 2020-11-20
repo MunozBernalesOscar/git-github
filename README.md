@@ -233,3 +233,23 @@ Las ramas son la forma de hacer cambios en nuestro proyecto sin afectar el flujo
 
 La cabecera o HEAD representan la rama y el commit de esa rama donde estamos trabajando. Por defecto, esta cabecera aparecerá en el último commit de nuestra rama principal. Pero podemos cambiarlo al crear una rama (**git branch NOMBRE_RAMA**, **git checkout -b NOMBRE_RAMA**) o movernos en el tiempo a cualquier otro commit de cualquier otra rama con los comandos (**git reset id-commit**, **git checkout rama-o-id-commit**).
 
+## 3.3. Fusión de ramas con git merge
+
+El comando git merge nos permite crear un nuevo commit con la combinación de dos ramas (la rama donde nos encontramos cuando ejecutamos el comando y la rama que indiquemos después del comando).
+
+```
+# Crear un nuevo commit en la rama master combinando
+# los cambios de la rama cabecera:
+> git checkout master
+> git merge cabecera
+
+# Crear un nuevo commit en la rama cabecera combinando
+# los cambios de cualquier otra rama:
+> git checkout cabecera
+> git merge cualquier-otra-rama
+```
+
+Es como si Git tuviera super poderes para saber qué cambios queremos conservar de una rama y qué otros de la otra. El problema es que no siempre puede adivinar, sobretodo en algunos casos donde dos ramas tienen actualizaciones diferentes en ciertas líneas en los archivos. Esto lo conocemos como un conflicto y aprenderemos a solucionarlos en la siguiente clase.
+
+Recuerda que al ejecutar el comando **git checkout** para cambiar de rama o commit puedes perder el trabajo que no hayas guardado. **_Guarda tus cambios antes de hacer git checkout_**.
+
