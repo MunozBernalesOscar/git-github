@@ -227,4 +227,9 @@ Esto significa que debes aprender algunos nuevos comandos:
 - **git merge**: También usamos el comando git merge con servidores remotos. Lo necesitamos para combinar los últimos cambios del servidor remoto y nuestro directorio de trabajo.
 - **git pull**: Básicamente, git fetch y git merge al mismo tiempo.
 
+## 3.2. Introducción a las ramas o branches de git
+
+Las ramas son la forma de hacer cambios en nuestro proyecto sin afectar el flujo de trabajo de la rama principal. Esto porque queremos trabajar una parte muy específica de la aplicación o simplemente experimentar.
+
+La cabecera o HEAD representan la rama y el commit de esa rama donde estamos trabajando. Por defecto, esta cabecera aparecerá en el último commit de nuestra rama principal. Pero podemos cambiarlo al crear una rama (**git branch NOMBRE_RAMA**, **git checkout -b NOMBRE_RAMA**) o movernos en el tiempo a cualquier otro commit de cualquier otra rama con los comandos (**git reset id-commit**, **git checkout rama-o-id-commit**).
 
