@@ -398,3 +398,15 @@ Existen varias formas de solucionar esto para poder aceptar contribuciones. Una 
 
 Solo debemos entrar a la configuración de colaboradores de nuestro proyecto (Repositorio > Settings > Collaborators) y añadir el email o username de los nuevos colaboradores.
 
+## 5. Flujo de trabajos profesionales.
+
+## 5.1. Flujo de trabajo profesional con pull request.
+En un entorno profesional normalmente se bloquea la rama master, y para enviar código a dicha rama pasa por un **code review** y luego de su aprobación se unen códigos con los llamados **merge request**.
+
+Para realizar pruebas enviamos el código a servidores que normalmente los llamamos **staging develop** (servidores de pruebas) luego de que se realizan las pruebas pertinentes tanto de código como de la aplicación estos pasan a el servidor de producción con el ya antes mencionado **merge request**.
+
+- github: **pull request**
+- gitlab: **merge request**
+- bitbucket: **push request**
+
+
