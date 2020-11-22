@@ -265,4 +265,4 @@ Recuerda que siempre debemos crear un nuevo commit para aplicar los cambios del 
 
 Los archivos con conflictos por el comando git merge entran en un nuevo estado que conocemos como Unmerged. Funcionan muy parecido a los archivos en estado Unstaged, algo así como un estado intermedio entre Untracked y Unstaged, solo debemos ejecutar git add para pasarlos al área de staging y git commit para aplicar los cambios en el repositorio.
 
-
+PROBANDO ERRORES MASTER
