@@ -421,11 +421,12 @@ El flujo del pull request es el siguiente
 - Se trabaja en una rama paralela los cambios que se desean (git checkout -b <rama>)
 - Se hace un commit a la rama (git commit -am '<Comentario>')
 - Se suben al remoto los cambios (git push origin <rama>)
-- En GitHub se hace el pull request comparando la rama master con la rama del fix.
-- Uno, o varios colaboradores revisan que el código sea correcto y dan feedback (en el chat del pull request)
+- En GitHub se hace el pull request comparando la rama master con la rama del fix. <br> ![](assets/pullRequestGithub.png)
+- Uno, o varios colaboradores revisan que el código sea correcto y dan feedback (en el chat del pull request) <br> ![](assets/comentarioPullRequest.png)
 - El colaborador hace los cambios que desea en la rama y lo vuelve a subir al remoto (automáticamente jala la historia de los cambios que se hagan en la rama, en remoto)
-- Se aceptan los cambios en GitHub
+- Se aceptan los cambios en GitHub <br> ![](assets/mergePullRequest.png)
 - Se hace merge a master desde GitHub
 
 <span style="color: red; font-size: 15px">Importante<span>: Cuando se modifica una rama, también se modifica el pull request.
+
 
