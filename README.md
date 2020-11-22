@@ -390,3 +390,43 @@ Puedes trabajar con ramas que nunca envías a GitHub, así como pueden haber ram
 
 Recuerda que podemos ver gráficamente nuestro entorno y flujo de trabajo local con Git usando el comando gitk.
 
+## 4.7. Configurar múltiples colaboradores en un repositorio de GitHub
+
+Por defecto, cualquier persona puede clonar o descargar tu proyecto desde GitHub, pero no pueden crear commits, ni ramas, ni nada.
+
+Existen varias formas de solucionar esto para poder aceptar contribuciones. Una de ellas es añadir a cada persona de nuestro equipo como colaborador de nuestro repositorio.
+
+Solo debemos entrar a la configuración de colaboradores de nuestro proyecto (Repositorio > Settings > Collaborators) y añadir el email o username de los nuevos colaboradores.
+
+## 5. Flujo de trabajos profesionales.
+
+## 5.1. Flujo de trabajo profesional con pull request.
+En un entorno profesional normalmente se bloquea la rama master, y para enviar código a dicha rama pasa por un **code review** y luego de su aprobación se unen códigos con los llamados **merge request**.
+
+Para realizar pruebas enviamos el código a servidores que normalmente los llamamos **staging develop** (servidores de pruebas) luego de que se realizan las pruebas pertinentes tanto de código como de la aplicación estos pasan a el servidor de producción con el ya antes mencionado **merge request**.
+
+- github: **pull request**
+- gitlab: **merge request**
+- bitbucket: **push request**
+
+
+## 5.2. Utilizando pull request en github
+### Pull request
+
+Es una funcionalidad de github (en gitlab llamada merge request y en bitbucket push request), en la que un colaborador pide que revisen sus cambios antes de hacer merge a una rama, normalmente master.
+
+Al hacer un pull request se genera una conversación que pueden seguir los demás usuarios del repositorio, así como autorizar y rechazar los cambios.
+
+El flujo del pull request es el siguiente
+- Se trabaja en una rama paralela los cambios que se desean (git checkout -b <rama>)
+- Se hace un commit a la rama (git commit -am '<Comentario>')
+- Se suben al remoto los cambios (git push origin <rama>)
+- En GitHub se hace el pull request comparando la rama master con la rama del fix. <br> ![](assets/pullRequestGithub.png)
+- Uno, o varios colaboradores revisan que el código sea correcto y dan feedback (en el chat del pull request) <br> ![](assets/comentarioPullRequest.png)
+- El colaborador hace los cambios que desea en la rama y lo vuelve a subir al remoto (automáticamente jala la historia de los cambios que se hagan en la rama, en remoto)
+- Se aceptan los cambios en GitHub <br> ![](assets/mergePullRequest.png)
+- Se hace merge a master desde GitHub
+
+<span style="color: red; font-size: 15px">Importante<span>: Cuando se modifica una rama, también se modifica el pull request.
+
+
