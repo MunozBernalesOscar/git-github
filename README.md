@@ -565,3 +565,11 @@ Consideraciones:
 - Al crear un stash tomará los archivos que han sido modificados y eliminados. Para que tome un archivo creado es necesario agregarlo al Staging Area con git add [nombre_archivo] con la intención de que git tenga un seguimiento de ese archivo, o también utilizando el comando git stash -u (que guardará en el stash los archivos que no estén en el staging).
 - Al aplicar un stash este no se elimina, es buena práctica eliminarlo.
 
+## 6.3. Git Clean: limpiar tu proyecto de archivos no deseados
+
+A veces creamos archivos cuando estamos realizando nuestro proyecto que realmente no forman parte de nuestro directorio de trabajo, que no se deberían agregar y lo sabemos.
+
+- Para saber qué archivos vamos a borrar tecleamos **git clean --dry-run**
+- Para borrar todos los archivos listados (que no son carpetas) tecleamos **git clean -f**
+
+
