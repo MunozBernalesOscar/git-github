@@ -632,3 +632,33 @@ Para buscar utilizamos el comando git grep color y nos buscará en todo el proye
 Para buscar en los comentarios de los commit utilizamos:
 - **git log -S "cabecera"**
 
+# 8. Bonus
+
+## 8.1. Comandos y recursos colaborativos en Git y GitHub
+
+```
+# muestra cuantos commit han hecho cada miembros del equipo.
+> git shortlog -sn
+
+# muestra cuantos commit han hecho cada miembros del equipo hasta los que han sido eliminado
+> git shortlog -sn --all
+    
+# muestra cuantos commit han hecho cada miembros quitando los eliminados sin los merges
+> git shortlog -sn --all --no-merge
+    
+# muestra quien hizo cada cosa linea por linea
+>git blame ARCHIVO
+    
+# muestra como funciona el comando.
+> git COMANDO --help
+
+#muestra quien hizo cada cosa linea por linea indicándole desde que linea ver ejemplo -L35,50
+> git blame ARCHIVO -Llinea_inicial,linea_final
+
+# se muestran todas las ramas remotas
+> git branch -r
+
+# se muestran todas las ramas tanto locales como remotas
+> git branch -a
+```
+
