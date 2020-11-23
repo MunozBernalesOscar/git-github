@@ -578,4 +578,10 @@ Existe un mundo alternativo en el cual vamos avanzando en una rama pero necesita
 
 cherry-pick es una <span style="color: red; font-size:20px;">MALA PRÁCTICA</span> porque significa que estamos reconstruyendo la historia, usa cherry-pick con sabiduría. Si no sabes lo que estás haciendo ten mucho cuidado.
 
+# 7. Comandos de git para casos de emergencia.
+
+## 7.1. Reconstruir commits en Git con amend
+
+A veces hacemos un commit, pero resulta que no queríamos mandarlo porque faltaba algo más. Utilizamos **git commit --amend**, amend en inglés es remendar y lo que hará es que los cambios que hicimos nos los agregará al commit anterior.
+
 
