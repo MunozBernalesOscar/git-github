@@ -100,6 +100,7 @@ Crear una nueva rama se trata de copiar un commit (de cualquier rama), pasarlo a
 
 Los equipos de desarrollo tienen un estándar: Todo lo que esté en la rama master va a producción, las nuevas features, características y experimentos van en una rama **_“development”_** (para unirse a master cuando estén definitivamente listas) y los issues o errores se solucionan en una rama **_“hotfix”** para unirse a master tan pronto como sea posible.
 
+
 Crear una nueva rama lo conocemos como Checkout. Unir dos ramas lo conocemos como Merge.
 
 Podemos crear todas las ramas y commits que queramos. De hecho, podemos aprovechar el registro de cambios de Git para crear ramas, traer versiones viejas del código, arreglarlas y combinarlas de nuevo para mejorar el proyecto.
